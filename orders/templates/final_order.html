@@ -1,0 +1,181 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+</head>
+<body>
+    <h1>Order Confirmation</h1>
+    <h2>Your Order:</h2>
+    <ul>
+        {% for item in items %}
+        <li>{{ item.item_name }} - ${{ item.price }} x {{ item.quantity }}</li>
+        {% endfor %}                                   
+    </ul>
+    <h3>Total Price: ${{ total_price }}</h3>
+    <h3>Payment Method: {{ payment_method }}</h3>
+    <p><strong>Thank you for visiting!</strong></p>
+    <a href="{% url 'restaurant_list' %}">Back to Restaurants</a>
+</body>
+</html>
+-->
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <!-- Bootstrap CSS 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        .order-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .order-list li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            font-size: 1.1rem;
+        }
+        .total-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #28a745;
+        }
+        .payment-method {
+            font-size: 1.2rem;
+            color: #17a2b8;
+        }
+        .btn-back {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn-back:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Confirmation</h1>
+        <h2>Your Order:</h2>
+        <ul class="order-list">
+            {% for item in items %}
+                <li>{{ item.item_name }} - ${{ item.price }} x {{ item.quantity }}</li>
+            {% endfor %}
+        </ul>
+        <h3 class="total-price">Total Price: ${{ total_price }}</h3>
+        <h3 class="payment-method">Payment Method: {{ payment_method }}</h3>
+        <p><strong>Thank you for your order!</strong></p>
+        <a href="{% url 'restaurant_list' %}" class="btn-back">Back to Restaurants</a>
+    </div>
+
+    <!-- Bootstrap JS Bundle 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        .order-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .order-list li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            font-size: 1.1rem;
+        }
+        .total-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #28a745;
+        }
+        .payment-method {
+            font-size: 1.2rem;
+            color: #17a2b8;
+        }
+        .btn-back {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn-back:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Confirmation</h1>
+        <h2>Your Order:</h2>
+        <ul class="order-list">
+            {% for item in items %}
+                <li>{{ item.item_name }} - ${{ item.price }} * {{ item.quantity }} = ${{ item.price|floatformat:2 }}</li>
+            {% empty %}
+                <li>No items in your order.</li>
+            {% endfor %}
+        </ul>
+        <h3 class="total-price">Total Price: ${{ total_price }}</h3>
+        <h3 class="payment-method">Payment Method: {{ payment_method }}</h3>
+        <p><strong>Thank you for your order!</strong></p>
+        <a href="{% url 'restaurant_list' %}" class="btn-back">Back to Restaurants</a>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
