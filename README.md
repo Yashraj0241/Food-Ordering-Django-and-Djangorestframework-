@@ -76,7 +76,7 @@ The **Food Ordering App** is a web-based application developed using Django and 
 
 ## **Database Models**
 
-```python
+python
 from django.db import models
 from django.contrib.auth.models import User
 
