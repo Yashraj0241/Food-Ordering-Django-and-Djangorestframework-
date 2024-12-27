@@ -110,7 +110,7 @@ class OrderItem(models.Model):
 ```
 ---
 
--## **API Testing with Postman**
+## **API Testing with Postman**
 
 You can use Postman to test the API endpoints of the Food Ordering App.
 
