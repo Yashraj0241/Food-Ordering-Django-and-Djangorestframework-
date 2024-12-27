@@ -13,7 +13,7 @@ The **Food Ordering App** is a web-based application developed using Django and 
 - [Database Models](#database-models)
 - [Setup and Installation](#setup-and-installation)
 - [API Testing with Postman](#api-testing-with-postman)
-- [Usage](#usage)
+- [Result](#result)
 
 ---
 
