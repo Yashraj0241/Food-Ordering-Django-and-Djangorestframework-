@@ -107,3 +107,35 @@ class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     menu_item = models.ForeignKey(Menu, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField()
+
+
+## **API Testing with Postman**
+
+You can use Postman to test the API endpoints of the Food Ordering App.
+
+### **Base URL:**
+The base URL for the API is `http://127.0.0.1:8000/api/`.
+
+### **Available Endpoints:**
+
+#### **User Authentication:**
+- `POST /api/register/`: Register a new user.
+- `POST /api/login/`: Log in an existing user.
+
+#### **Restaurant Endpoints:**
+- `GET /api/restaurants/`: Get the list of all restaurants.
+- `GET /api/restaurants/{id}/`: Get details of a specific restaurant.
+
+#### **Menu Endpoints:**
+- `GET /api/menu/{restaurant_id}/`: Get the menu for a specific restaurant.
+
+#### **Cart Endpoints:**
+- `GET /api/cart/`: Get the current user's cart.
+- `POST /api/cart/add/`: Add an item to the cart.
+- `DELETE /api/cart/remove/`: Remove an item from the cart.
+
+#### **Order Endpoints:**
+- `POST /api/order/`: Place an order.
+
+### **Testing API Endpoints:**
+Use Postman to send requests to these endpoints. Ensure that you pass the necessary authentication headers (e.g., `Authorization: Token <your_token>` for authenticated requests).
