@@ -1,61 +1,79 @@
-content = """# Food Ordering App
+# Food Ordering App
 
-## Overview
-The **Food Ordering App** is a web-based application built using Django and Django REST Framework. It provides users with an intuitive interface to browse restaurants, view their menus, add items to a cart, and place orders with multiple payment options. The app ensures a seamless user experience with authentication mechanisms and robust backend functionalities.
+## **About the Project**
+The **Food Ordering App** is a web-based application developed using Django and Django REST Framework (DRF). It provides a seamless user experience for browsing restaurants, viewing menus, managing a cart, and placing orders with multiple payment options.
 
-## Features
+---
+
+## **Table of Contents**
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Workflow](#workflow)
+- [Technologies Used](#technologies-used)
+- [Database Models](#database-models)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+
+---
+
+## **Features**
 - **User Authentication:**
   - User registration and login functionality.
-  - Redirects users to the registration page if they attempt to log in without an account.
+  - Redirects users to the registration page if they attempt to log in without registering.
 - **Restaurant Browsing:**
-  - Displays a list of restaurants with their names, ratings, and locations.
+  - Displays a list of restaurants with details like name, rating, and location.
 - **Menu Viewing:**
-  - Each restaurant has a dedicated page showing its menu with item names, prices, and an option to add items to the cart.
+  - Dedicated restaurant page with its menu, item details, and an "Add to Cart" option.
 - **Cart Management:**
-  - Users can add multiple items to the cart.
-  - View added items, their prices, quantities, and the total bill in the cart.
-  - Option to remove items from the cart.
+  - Add multiple items to the cart and view their details, including price and quantity.
+  - Remove specific items from the cart.
+  - Displays total bill amount.
 - **Order Placement:**
-  - Multiple payment methods like Google Pay, PhonePe, and Cash on Delivery.
-  - Order confirmation page showing order details and a "Thank you" message.
+  - Supports multiple payment methods like Google Pay, PhonePe, and Cash on Delivery.
+  - Displays an order confirmation page with order details and a thank-you message.
 - **Navigation:**
-  - Easy navigation back to the restaurant list page after placing an order.
+  - Easy navigation between pages, including a "Back to Restaurant" option.
 
-## Workflow
+---
+
+## **Workflow**
+
 1. **User Registration and Login:**
-   - New users must register to access the app.
-   - Registered users can log in and access the restaurant list.
-   - Attempting to log in without registration redirects to the registration page.
+   - New users must register before accessing the app.
+   - Attempting to log in without registering redirects users to the registration page.
 2. **Restaurant Listing:**
-   - After login, users are directed to the restaurant list page.
-   - Each restaurant entry shows its name, rating, and location.
-3. **Menu Browsing:**
-   - Clicking on a restaurant shows its menu.
-   - Menu items include the name, price, and an "Add to Cart" button.
+   - After login, users are redirected to the restaurant list page.
+   - Each restaurant displays its name, rating, and location.
+3. **Menu Viewing:**
+   - Clicking on a restaurant leads to its dedicated menu page.
+   - Users can add items to their cart from this page.
 4. **Cart Management:**
-   - Items can be added to the cart.
-   - Users can view, modify, and remove items from the cart.
-   - Total bill is displayed with a "Proceed to Payment" option.
+   - Users can view their cart, modify quantities, and remove items.
+   - The total bill is displayed with a "Proceed to Payment" button.
 5. **Order Placement:**
    - Users select a payment method and confirm the order.
-   - The order confirmation page displays the order summary, total price, and a thank-you message.
-   - Users can navigate back to the restaurant list page.
+   - The order confirmation page displays order details and a thank-you message.
 
-## Technologies Used
-### Backend:
-- **Django:** Framework for building the application.
-- **Django REST Framework:** For handling RESTful operations.
-- **SQLite:** Database for storing application data.
+---
 
-### Frontend:
-- **HTML:** For structuring the pages.
-- **CSS & Bootstrap:** For styling and responsive design.
-- **JavaScript:** For interactivity.
+## **Technologies Used**
 
-### Authentication:
-- **Django's User Model:** Predefined model for user authentication (login, logout, registration).
+- **Backend:**
+  - Django
+  - Django REST Framework
+  - SQLite
+- **Frontend:**
+  - HTML
+  - CSS (inline styles and Bootstrap)
+  - JavaScript
+- **Tools:**
+  - Django Admin for authentication management
+  - Virtual environment for dependency management
 
-## Database Models
+---
+
+## **Database Models**
+
 ```python
 from django.db import models
 from django.contrib.auth.models import User
@@ -87,4 +105,3 @@ class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     menu_item = models.ForeignKey(Menu, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField()
-
