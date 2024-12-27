@@ -1,7 +1,7 @@
 # Food Ordering App
 
 ## **About the Project**
-The **Food Ordering App** is a web-based application developed using Django and Django REST Framework (DRF). It provides a seamless user experience for browsing restaurants, viewing menus, managing a cart, and placing orders with multiple payment options.
+The **Food Ordering App** is a web-based application developed using Django and Django REST Framework (DRF). It provides a seamless user experience for browsing restaurants, viewing menus, managing a cart, and placing orders with multiple payment options. The application is fully API-driven, and tools like **Postman** have been used to test and verify the API endpoints.
 
 ---
 
@@ -12,6 +12,7 @@ The **Food Ordering App** is a web-based application developed using Django and 
 - [Technologies Used](#technologies-used)
 - [Database Models](#database-models)
 - [Setup and Installation](#setup-and-installation)
+- [API Testing with Postman](#api-testing-with-postman)
 - [Usage](#usage)
 
 ---
@@ -60,13 +61,14 @@ The **Food Ordering App** is a web-based application developed using Django and 
 
 - **Backend:**
   - Django
-  - Django REST Framework
+  - Django REST Framework (DRF)
   - SQLite
 - **Frontend:**
   - HTML
   - CSS (inline styles and Bootstrap)
   - JavaScript
 - **Tools:**
+  - **Postman**: For API endpoint testing and validation.
   - Django Admin for authentication management
   - Virtual environment for dependency management
 
