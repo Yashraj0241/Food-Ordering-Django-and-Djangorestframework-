@@ -76,7 +76,7 @@ The **Food Ordering App** is a web-based application developed using Django and 
 
 ## **Database Models**
 
-python
+```python
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -106,10 +106,11 @@ class Order(models.Model):
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     menu_item = models.ForeignKey(Menu, on_delete=models.CASCADE)
-    quantity = models.PositiveIntegerField()
+    quantity = models.PositiveIntegerField()  
+```
+---
 
-
-## **API Testing with Postman**
+-## **API Testing with Postman**
 
 You can use Postman to test the API endpoints of the Food Ordering App.
 
@@ -139,3 +140,4 @@ The base URL for the API is `http://127.0.0.1:8000/api/`.
 
 ### **Testing API Endpoints:**
 Use Postman to send requests to these endpoints. Ensure that you pass the necessary authentication headers (e.g., `Authorization: Token <your_token>` for authenticated requests).
+---
