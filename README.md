@@ -139,5 +139,11 @@ The base URL for the API is `http://127.0.0.1:8000/api/`.
 - `POST /api/order/`: Place an order.
 
 ### **Testing API Endpoints:**
-Use Postman to send requests to these endpoints. Ensure that you pass the necessary authentication headers (e.g., `Authorization: Token <your_token>` for authenticated requests).
+- Use Postman to send requests to these endpoints. Ensure that you pass the necessary authentication headers (e.g., `Authorization: Token <your_token>` for authenticated requests).
 ---
+
+## **Result**
+ **Screenshots**:
+  ![Upload Image Screen](https://github.com/Yashraj0241/Brain-Tumor-Detection/blob/c83400f37692b1f38e894ab30833e401a4b5c54e/static/Screenshot%202024-12-26%20200522.png).
+  
+  ![Prediction Result](https://github.com/Yashraj0241/Brain-Tumor-Detection/blob/c3ec5d69053bd40c50622cc613de6a6e5fefd860/static/Screenshot%20(3).png)
