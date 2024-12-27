@@ -143,7 +143,17 @@ The base URL for the API is `http://127.0.0.1:8000/api/`.
 ---
 
 ## **Result**
- **Screenshots**:
-  ![Upload Image Screen](https://github.com/Yashraj0241/Brain-Tumor-Detection/blob/c83400f37692b1f38e894ab30833e401a4b5c54e/static/Screenshot%202024-12-26%20200522.png).
-  
-  ![Prediction Result](https://github.com/Yashraj0241/Brain-Tumor-Detection/blob/c3ec5d69053bd40c50622cc613de6a6e5fefd860/static/Screenshot%20(3).png)
+ **Register**:
+  ![Register](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/register.png).
+ **Login**: 
+  ![Login](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/login.png)
+ **Restaurant**:
+  ![Restauramt](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/restaurant.png).
+ **Menu**:
+  ![Menu](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/menu.png)
+ **Cart**:
+  ![Cart](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/cart.png)
+ **Payment**:
+  ![Payment](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/payment.png)
+ **Final Order**:
+  ![Final](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/final.png)
