@@ -158,13 +158,13 @@ To get the Food Ordering App up and running, follow these steps:
      python manage.py migrate
 
 4. **Create Superuser**
-   If you want to access Django Admin, create a superuser:
+   
+  If you want to access Django Admin, create a superuser:
 
      ```bash
      python manage.py createsuperuser
      
-5. **Run the Development Server**
-    Start the development server:
+6. **Run the Development Server**
 
    ```bash
    python manage.py runserver
