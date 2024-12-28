@@ -205,11 +205,11 @@ The base URL for the API is `http://127.0.0.1:8000/api/`.
 
 ## **Result**
  **Register** :
-  ![Register](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/register.png).
+  ![Register](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/register.png)
  **Login** : 
   ![Login](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/login.png)
  **Restaurant** :
-  ![Restauramt](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/restaurant.png).
+  ![Restauramt](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/restaurant.png)
  **Menu** :
   ![Menu](https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-/blob/327605be6ed0531464b294e5f8c89fe121a56f69/result/menu.png)
  **Cart** :
