@@ -125,11 +125,25 @@ To get the Food Ordering App up and running, follow these steps:
     cd food-ordering-app
     python -m venv venv
     source venv/bin/activate  # On Windows use 'venv\Scripts\activate'
-   Install the necessary dependencies: 
+3. Install the necessary dependencies: 
    ```bash
       pip install -r requirements.txt
 
+4. **Setup Database**
+   
+  ## Database Migrations
+  Before running the project, ensure that you apply the migrations to set up the database schema. Follow these steps:
 
+  1. Run `makemigrations` to create migration files for the database:
+
+    ```bash
+    python manage.py makemigrations
+
+  2. Apply the migrations to the database:
+     ```bash
+     python manage.py migrate
+
+      
 ---
 ## **API Testing with Postman**
 
