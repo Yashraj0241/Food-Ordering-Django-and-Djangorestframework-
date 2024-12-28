@@ -117,7 +117,7 @@ To get the Food Ordering App up and running, follow these steps:
 1. **Clone the Repository**  
    Clone the repository to your local machine using:
     ```bash
-    git clone https://github.com/yourusername/food-ordering-app.git
+    git clone https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-
    
 2. **Install Dependencies**
    Navigate into the project directory and create a virtual environment:
@@ -125,31 +125,33 @@ To get the Food Ordering App up and running, follow these steps:
     cd food-ordering-app
     python -m venv venv
     source venv/bin/activate  # On Windows use 'venv\Scripts\activate'
-3. Install the necessary dependencies: 
+    ```
+   Install the necessary dependencies: 
    ```bash
       pip install -r requirements.txt
 
-4. **Setup Database**
+3. **Setup Database**
    
-  ## Database Migrations
+   Database Migrations
   Before running the project, ensure that you apply the migrations to set up the database schema. Follow these steps:
 
-  1. Run `makemigrations` to create migration files for the database:
+   Run `makemigrations` to create migration files for the database:
 
     ```bash
     python manage.py makemigrations
+    ```
 
-  2. Apply the migrations to the database:
+    Apply the migrations to the database:
      ```bash
      python manage.py migrate
 
-5. **Create Superuser**
+4. **Create Superuser**
    If you want to access Django Admin, create a superuser:
 
      ```bash
      python manage.py createsuperuser
      
-6. **Run the Development Server**
+5. **Run the Development Server**
    Start the development server:
 
    ```bash
