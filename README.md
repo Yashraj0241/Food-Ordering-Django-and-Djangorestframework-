@@ -164,7 +164,7 @@ To get the Food Ordering App up and running, follow these steps:
      python manage.py createsuperuser
      
 5. **Run the Development Server**
-   Start the development server:
+    Start the development server:
 
    ```bash
    python manage.py runserver
