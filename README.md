@@ -110,6 +110,27 @@ class OrderItem(models.Model):
 ```
 ---
 
+## **Setup and Installation**
+
+To get the Food Ordering App up and running, follow these steps:
+
+1. **Clone the Repository**  
+   Clone the repository to your local machine using:
+    ```bash
+    git clone https://github.com/yourusername/food-ordering-app.git
+   
+2. **Install Dependencies**
+   Navigate into the project directory and create a virtual environment:
+    ```bash
+    cd food-ordering-app
+    python -m venv venv
+    source venv/bin/activate  # On Windows use 'venv\Scripts\activate'
+   Install the necessary dependencies: 
+   ```bash
+      pip install -r requirements.txt
+
+
+---
 ## **API Testing with Postman**
 
 You can use Postman to test the API endpoints of the Food Ordering App.
