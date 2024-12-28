@@ -117,7 +117,7 @@ To get the Food Ordering App up and running, follow these steps:
 1. **Clone the Repository**  
    Clone the repository to your local machine using:
     ```bash
-    git clone https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-
+    https://github.com/Yashraj0241/Food-Ordering-Django-and-Djangorestframework-
    
 2. **Install Dependencies**
    Navigate into the project directory and create a virtual environment:
